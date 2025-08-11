@@ -4,127 +4,59 @@ This Python script checks the configuration of a Barracuda Web Application Firew
 
 The script performs both automated and manual verification checks for key security settings, such as security mode, TLS configuration, attack type blocking, and more. A banner titled "Config Check Barracuda WAF" is displayed in the terminal during execution and in the generated HTML report.
 
-Features
+# Features
 
 
-
+```
 Automated Checks:
-
 
 Security Mode (Active or not)
 
-
 TLS 1.0 Disabled
-
-
 
 Key Attack Types Blocked (e.g., SQL Injection, XSS)
 
-
-
 Cookie Tamper Proof Mode
-
-
-
 Access Logs Enabled
-
-
-
 Cloaking Enabled
-
-
-
 Request Limits Enabled
-
-
-
 Parameter Protection Enabled
-
-
-
 URL Protection Enabled
-
-
-
 Secure Cookies Enforced
-
-
-
 HTTP-Only Cookies Enforced
+```
 
-
-
-Manual Verification Checks:
-
-
-
-
-
+# Manual Verification Checks:
+``
 Proxy Mode Deployment
-
-
-
 Firewall Deployment
-
-
-
 High Availability Clustering
-
-
-
 Syslog Configuration
-
-
-
 Notifications Enabled
-
-
-
 Firmware Up to Date
-
-
+```
 
 Generates an HTML report (waf_report.html) with a styled table and banner.
 
-
-
-Displays a terminal banner during execution.
-
-Requirements
-
-
-
-
-
+**Requirements**
+```
 Python 3.6+
-
-
-
 Required Python package:
-
 requests (install via pip install requests)
-
 Access to the Barracuda WAF REST API (IP/hostname, username, password)
-
 Network connectivity to the WAF's API endpoint (default port: 8000)
-
-Installation
+```
+**Installation**
 
 Clone the repository:
-
+```
 git clone https://github.com/3tternp/barracuda-config-review
 cd barracuda-config-review
-
-
-
 Install the required Python package:
-
 pip install requests
-
-Usage
-
+```
+**Usage**
 Run the script from the command line with the required arguments:
-
 python waf_check.py --host <WAF_IP> --password <PASSWORD> [--username <USERNAME>] [--api_version <VERSION>]
 
 Example
