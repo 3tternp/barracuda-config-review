@@ -6,7 +6,6 @@ The script performs both automated and manual verification checks for key securi
 
 # Features
 
-
 ```
 Automated Checks:
 Security Mode (Active or not)
@@ -23,7 +22,7 @@ HTTP-Only Cookies Enforced
 ```
 
 # Manual Verification Checks:
-``
+```
 Proxy Mode Deployment
 Firewall Deployment
 High Availability Clustering
@@ -32,7 +31,7 @@ Notifications Enabled
 Firmware Up to Date
 
 ```
-
+```
 Generates an HTML report (waf_report.html) with a styled table and banner.
 ```
 # Requirements
@@ -52,6 +51,7 @@ Install the required Python package:
 pip install requests
 ```
 # Usage
+```
 Run the script from the command line with the required arguments:
 python waf_check.py --host <WAF_IP> --password <PASSWORD> [--username <USERNAME>] [--api_version <VERSION>]
 
@@ -64,6 +64,7 @@ Arguments
 --password: (Required) Password for authentication.
 --username: (Optional) Username for authentication (default: admin).
 --api_version: (Optional) API version (e.g., v1 or v3.2, default: v1).
+```
 
 # Output
 ```
