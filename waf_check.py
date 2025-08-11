@@ -187,18 +187,20 @@ findings.append({
     'remediation': remediation
 })
 
-# Generate HTML Report
+# Generate HTML Report with Banner
 html = """
 <html>
 <head>
-<title>Barracuda WAF Configuration Report</title>
+<title>Config Check Barracuda WAF</title>
 <style>
 table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid black; padding: 8px; text-align: left; }
 th { background-color: #f2f2f2; }
+.banner { background-color: #4CAF50; color: white; padding: 10px; text-align: center; font-size: 24px; font-weight: bold; }
 </style>
 </head>
 <body>
+<div class="banner">Config Check Barracuda WAF</div>
 <h1>Barracuda WAF Configuration Report</h1>
 <table>
 <tr>
